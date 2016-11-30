@@ -7,6 +7,8 @@ Ejecute el sccript upeu_db.sql
 Authorization Server API REST:
 -------------------
 (ve_...) D:\practian o XXX\oauth2_backend_service>pip install -r requirements.txt
+(ve_...) D:\practian o XXX\oauth2_backend_service>manage.py migrate
+(ve_...) D:\practian o XXX\oauth2_backend_service>manage.py createsupersuer
 
 (ve_...) D:\practian o XXX\oauth2_backend_service>manage.py runserver 9000
 Performing system checks...
@@ -19,11 +21,6 @@ Quit the server with CTRL-BREAK.
 
 // USER : admin
 // PASSWORD : 12345
-
-Cree desde cero
--------------------
-(ve_...) D:\practian o XXX\oauth2_backend_service>manage.py migrate
-(ve_...) D:\practian o XXX\oauth2_backend_service>manage.py createsupersuer
 
 
 Backup database
