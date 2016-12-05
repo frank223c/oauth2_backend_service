@@ -1,0 +1,8 @@
+[2016-12-03 19:00:02] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-03 22:23:56] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-04 07:56:32] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-04 16:01:56] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-05 03:18:39] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-05 03:26:05] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-05 03:33:50] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-05 13:49:17] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated

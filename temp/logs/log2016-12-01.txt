@@ -1,0 +1,2 @@
+[2016-12-01 23:34:54] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
+[2016-12-01 23:35:13] [INFO] [oauth2_backend_api.views.api_localuserinfo:41] [/api/oauth2_backend/localuserinfo/] [127.0.0.1] [admin] [GET] User is authenticated
