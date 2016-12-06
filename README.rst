@@ -4,7 +4,7 @@ oauth2_backend_service
 
 .. class:: no-web
 
-    oauth2_backend_service es una manera fácil de extender la clase ``AbstractUser`` de `Django`_ y define un modelo de *autenticación/autorización* para **aplicaciones SaaS** para los proyectos de `Django`_.
+    oauth2_backend_service es el microservicio para el **Authorization server** escrita en  `Django`_ 1.10.x, `Django REST Framework`_ 3.5 y `Django OAuth Toolkit`_ 0.10 (OAuth2). Y utiliza la app ```oauth2_backend`_``.
 
 
     .. image:: https://github.com/practian-ioteca-project/oauth2_backend_service/blob/master/media/doc/e1-authorization_server.png
@@ -85,7 +85,7 @@ Run the app in 7001 port::
 
 
 ===========
-pplication definition
+Setting definition
 ===========
 
 1. INSTALLED_APPS setting like this:
@@ -120,7 +120,7 @@ pplication definition
 	    'default': {
 	        'ENGINE': 'django.db.backends.mysql',
 	        'OPTIONS': {
-	            'read_default_file': 'credentials.cnf',  # solo funciona con mysql
+	            'read_default_file': 'credentials.cnf',  # read_default_file solo funciona con mysql
 	        },
 	    },
 	}	
@@ -165,10 +165,15 @@ Contributors
 
 See https://github.com/practian-ioteca-project/oauth2_backend_service/graphs/contributors
 
-
-.. _Django OAuth Toolkit: https://django-oauth-toolkit.readthedocs.io
-.. _Django: https://www.djangoproject.com
 .. _github: https://github.com/practian-ioteca-project/oauth2_backend_service
+.. _Django: https://www.djangoproject.com
+.. _Django REST Framework: http://www.django-rest-framework.org
+.. _Django OAuth Toolkit: https://django-oauth-toolkit.readthedocs.io
+.. _oauth2_backend: https://github.com/practian-reapps/django-oauth2-backend
+
+
+
+
 
 
 
