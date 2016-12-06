@@ -84,30 +84,57 @@ Run the app in 7001 port::
 
 
 
-or clone from github_:
+===========
+pplication definition
+===========
+
+1. INSTALLED_APPS setting like this:
 
 .. code-block:: bash
 
-    $ git clone https://github.com/practian-reapps/django-backend-utils.git
+	INSTALLED_APPS = [
+	    'django.contrib.admin',
+	    'django.contrib.auth',
+	    'django.contrib.contenttypes',
+	    'django.contrib.sessions',
+	    'django.contrib.messages',
+	    'django.contrib.staticfiles',
 
-(If ``pip`` installation fails for some reason, you can try ``easy_install`` as a fallback.)
+	    'django.contrib.admindocs',
+	    'rest_framework',
+	    'corsheaders',
+	    'oauth2_provider',
 
+	    'oauth2_backend',
+	    'backend_utils',
+	]
 
+2. AUTH_USER_MODEL setting like this::
 
-===========
-Quick start
-===========
+	AUTH_USER_MODEL = 'oauth2_backend.User' 
 
-1. Add "backend_utils" to your INSTALLED_APPS setting like this:
+3. DATABASES setting like this::
 
-.. code-block:: bash
+	# Database mysql
+	DATABASES = {
+	    'default': {
+	        'ENGINE': 'django.db.backends.mysql',
+	        'OPTIONS': {
+	            'read_default_file': 'credentials.cnf',  # solo funciona con mysql
+	        },
+	    },
+	}	
 
-    INSTALLED_APPS = [
-        ...
+4. credentials.cnf file setting like this::
 
-        'backend_utils',
-    ]
-
+	# my.cnf
+	[client]
+	database = upeu_db
+	user = root
+	password = 12345
+	host = 127.0.0.1
+	port = 3306
+	default-character-set = utf8
 
 
 
