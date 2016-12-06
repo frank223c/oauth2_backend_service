@@ -49,12 +49,34 @@ The **latest development version** can be installed directly from github_:
     # Universal
     
     E:\dev>git clone https://github.com/practian-ioteca-project/oauth2_backend_service.git
+
+Cree un entorno virtual::
+
     E:\dev>virtualenv ve_oauth2_backend
     E:\dev>ve_oauth2_backend\Scripts\activate
+
+Instale las dependencias::
+
     (ve_oauth2_backend) E:\dev>cd oauth2_backend_service
     (ve_oauth2_backend) E:\dev\oauth2_backend_service>pip install -r requirements.txt
+
+Sync your database y Cree un super usuario::
+
     (ve_oauth2_backend) E:\dev\oauth2_backend_service>manage.py migrate
+
     (ve_oauth2_backend) E:\dev\oauth2_backend_service>manage.py createsupersuer
+
+    # deberás crear las apps en http://localhost:7001/o/applications/ y en el cliente https://github.com/practian-ioteca-project/catalogo_web/blob/master/app/config.js actualizar la variable
+    oauth2Service.clientId = "tu nuevo client_id";
+
+O en MySQL admin, restrure la DB de https://github.com/practian-ioteca-project/oauth2_backend_service/blob/master/upeu_db.sql ::
+
+	# USER : admin
+	# PASSWORD : 12345
+
+
+Run the app in 7001 port::
+
     (ve_oauth2_backend) E:\dev\oauth2_backend_service>manage.py runserver 7001
 
 
