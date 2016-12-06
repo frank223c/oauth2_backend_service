@@ -42,7 +42,7 @@ Requirements
 Development version
 -------------------
 
-The **latest development version** can be installed directly from github_:
+Clone **latest development version** directly from github_:
 
 .. code-block:: bash
     
@@ -66,7 +66,10 @@ Sync your database y Cree un super usuario::
 
     (ve_oauth2_backend) E:\dev\oauth2_backend_service>manage.py createsupersuer
 
-    # deberás crear las apps en http://localhost:7001/o/applications/ y en el cliente https://github.com/practian-ioteca-project/catalogo_web/blob/master/app/config.js actualizar la variable
+    # deberás crear las apps en http://localhost:7001/o/applications/ 
+    # y en el cliente https://github.com/practian-ioteca-project/catalogo_web/blob/master/app/config.js 
+    # actualizar la variable
+
     oauth2Service.clientId = "tu nuevo client_id";
 
 O en MySQL admin, restrure la DB de https://github.com/practian-ioteca-project/oauth2_backend_service/blob/master/upeu_db.sql ::
