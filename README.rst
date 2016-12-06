@@ -7,7 +7,7 @@ oauth2_backend_service
     oauth2_backend_service es una manera fácil de extender la clase ``AbstractUser`` de `Django`_ y define un modelo de *autenticación/autorización* para **aplicaciones SaaS** para los proyectos de `Django`_.
 
 
-    .. image:: https://github.com/practian-ioteca-project/oauth2_backend_service/blob/master/media/doc/e1_authorization_server.png
+    .. image:: https://github.com/practian-ioteca-project/oauth2_backend_service/blob/master/media/doc/e1-authorization_server.png
         :alt: HTTPie compared to cURL
         :width: 100%
         :align: center
