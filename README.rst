@@ -4,7 +4,8 @@ oauth2_backend_service
 
 .. class:: no-web
 
-    oauth2_backend_service es el microservicio para el **Authorization server** escrita en  `Django`_ 1.10.x, `Django REST Framework`_ 3.5 y `Django OAuth Toolkit`_ 0.10 (OAuth2). Y utiliza la app oauth2_backend_.
+    oauth2_backend_service es el microservicio para el **Authorization server** escrita en  `Django`_ 1.10.x, `Django REST Framework`_ 3.5.x y `Django OAuth Toolkit`_ 0.10.x (OAuth2). Y utiliza la app oauth2_backend_.
+
 
 
     .. image:: https://github.com/practian-ioteca-project/oauth2_backend_service/blob/master/media/doc/e1-authorization_server.png
@@ -85,7 +86,7 @@ Run the app in 7001 port::
 
 
 ===========
-Setting definition
+Revise las configuraciones
 ===========
 
 1. INSTALLED_APPS setting like this:

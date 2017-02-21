@@ -1,0 +1,719 @@
+[2016-12-12 11:23:20] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 11:23:20] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 11:23:20] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 11:23:22] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 11:23:23] DEBUG [django.db.backends:90] (0.649) SHOW FULL TABLES; args=None
+[2016-12-12 11:23:23] DEBUG [django.db.backends:90] (0.031) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2016-12-12 11:25:05] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:38:56] INFO [django.server:131] "OPTIONS /api/oauth2_backend/usermenu/ HTTP/1.1" 200 0
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.121) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'vYl1zoGLM6YCCCsSVyLPVf71i62qfp'; args=('vYl1zoGLM6YCCCsSVyLPVf71i62qfp',)
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`username` IS NULL; args=()
+[2016-12-12 14:38:56] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'vYl1zoGLM6YCCCsSVyLPVf71i62qfp'; args=('vYl1zoGLM6YCCCsSVyLPVf71i62qfp',)
+[2016-12-12 14:38:56] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:39:18] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:39:32] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:39:39] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:39:50] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:39:54] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:39:57] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:40:03] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:40:31] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:40:33] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:40:56] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:41:02] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:41:19] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 14:41:42] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 15:10:03] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 15:10:42] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 15:20:27] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 15:22:01] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 15:22:03] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 16:32:22] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 16:32:24] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 16:32:55] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 16:48:31] WARNING [django.server:131] "GET /api/oauth2_backend/usermenu/ HTTP/1.1" 401 58
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.044) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-12 22:08:35'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-12 22:08:35')
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI'; args=('RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI',)
+[2016-12-12 17:08:35] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI'; args=('RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI',)
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'error' in template 'oauth2_provider/authorize.html'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '[{\'False\': False, \'True\': True, \'None\': None}, {\'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20}, \'user\': <SimpleLazyObject: <User: admin>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000005D32AC8>, \'request\': <WSGIRequest: GET \'/o/authorize/?response_type=token&client_id=RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI&state=IyZLShufZKLouNGqIu5w%3B%23%2Fcatalogo%2Fcatalogo%2Fcategorias&scope=catalogo\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000015C42B0>, \'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000005D39400>>}, {}, {\'response_type\': \'token\', \'scopes\': [\'catalogo\'], \'form\': <AllowForm bound=False, valid=Unknown, fields=(allow;redirect_uri;scope;client_id;state;response_type)>, \'scopes_descriptions\': [\'Access to your catalogo app\'], \'redirect_uri\': \'http://localhost:9003\', \'application\': <Application: Catálogo Web>, \'client_id\': \'RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI\', \'state\': \'IyZLShufZKLouNGqIu5w;#/catalogo/catalogo/categorias\', \'view\': <oauth2_provider.views.base.AuthorizationView object at 0x00000000015C4588>, \'request\': <oauthlib.Request url="/o/authorize/?response_type=token&client_id=RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI&state=IyZLShufZKLouNGqIu5w%3B%23%2Fcatalogo%2Fcatalogo%2Fcategorias&scope=catalogo", http_method="GET", headers="{\'QUERY_STRING\': \'response_type=token&client_id=RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI&state=IyZLShufZKLouNGqIu5w%3B%23%2Fcatalogo%2Fcatalogo%2Fcategorias&scope=catalogo\', \'FPS_BROWSER_USER_PROFILE_STRING\': \'Default\', \'HTTP_CONNECTION\': \'keep-alive\', \'HTTP_HOST\': \'localhost:7001\', \'VIRTUAL_ENV\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\', \'HTTP_UPGRADE_INSECURE_REQUESTS\': \'1\', \'ALLUSERSPROFILE\': \'C:\\\\ProgramData\', \'HTTP_USER_AGENT\': \'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0\', \'COMPUTERNAME\': \'DEV1-ASULLOM\', \'HOMEPATH\': \'\\\\Users\\\\Usuario\', \'HOMEDRIVE\': \'C:\', \'PATH_INFO\': \'/o/authorize/\', \'SYSTEMROOT\': \'C:\\\\WINDOWS\', \'SESSIONNAME\': \'Console\', \'CONTENT_LENGTH\': \'\', \'CONTENT_TYPE\': \'text/plain\', \'CSRF_COOKIE\': \'9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm\', \'wsgi.run_once\': False, \'wsgi.url_scheme\': \'http\', \'wsgi.version\': (1, 0), \'SERVER_PROTOCOL\': \'HTTP/1.1\', \'PROCESSOR_IDENTIFIER\': \'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel\', \'HTTP_ACCEPT_ENCODING\': \'gzip, deflate\', \'HTTP_COOKIE\': \'csrftoken=9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm; _ga=GA1.1.1207431004.1477416897; sessionid=yc1wabm2zn7ap88yodi84ugfkayrt17s; theme=docs-dark; io=S2umxe9k23it9LtFAACj\', \'PROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\', \'USERPROFILE\': \'C:\\\\Users\\\\Usuario\', \'PATH\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\Scripts;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_ARCHITECTURE\': \'AMD64\', \'WINDIR\': \'C:\\\\WINDOWS\', \'TEMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'REQUEST_METHOD\': \'GET\', \'COMSPEC\': \'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\', \'USERDOMAIN\': \'DEV1-ASULLOM\', \'wsgi.multithread\': True, \'USERNAME\': \'Usuario\', \'TMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'SERVER_SOFTWARE\': \'WSGIServer/0.2\', \'SERVER_NAME\': \'DEV1-ASULLOM\', \'PROMPT\': \'(ve_oauth2_backend) $P$G\', \'_OLD_VIRTUAL_PROMPT\': \'$P$G\', \'wsgi.file_wrapper\': <class \'wsgiref.util.FileWrapper\'>, \'FPS_BROWSER_APP_PROFILE_STRING\': \'Internet Explorer\', \'LOGONSERVER\': \'\\\\\\\\DEV1-ASULLOM\', \'NUMBER_OF_PROCESSORS\': \'8\', \'PROGRAMFILES\': \'C:\\\\Program Files\', \'PROCESSOR_REVISION\': \'3c03\', \'DJANGO_SETTINGS_MODULE\': \'oauth2_backend_main.settings\', \'REMOTE_HOST\': \'\', \'HTTP_REFERER\': \'http://localhost:9003/\', \'PUBLIC\': \'C:\\\\Users\\\\Public\', \'HTTP_ACCEPT\': \'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\', \'APPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\', \'PROGRAMW6432\': \'C:\\\\Program Files\', \'RUN_MAIN\': \'true\', \'COMMONPROGRAMFILES\': \'C:\\\\Program Files\\\\Common Files\', \'SCRIPT_NAME\': \'\', \'LOCALAPPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\', \'SYSTEMDRIVE\': \'C:\', \'COMMONPROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\\\\Common Files\', \'COMMONPROGRAMW6432\': \'C:\\\\Program Files\\\\Common Files\', \'PROGRAMDATA\': \'C:\\\\ProgramData\', \'REMOTE_ADDR\': \'127.0.0.1\', \'OS\': \'Windows_NT\', \'_OLD_VIRTUAL_PATH\': \'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_LEVEL\': \'6\', \'HTTP_ACCEPT_LANGUAGE\': \'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3\', \'PSMODULEPATH\': \'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\\', \'PATHEXT\': \'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW\', \'USERDOMAIN_ROAMINGPROFILE\': \'DEV1-ASULLOM\', \'wsgi.multiprocess\': False, \'GATEWAY_INTERFACE\': \'CGI/1.1\', \'SERVER_PORT\': \'7001\'}", body="">}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n    <div class="block-ce\'>, <IfNode>, <TextNode: \'\\n    </div>\\n\'>]>}]'
+[2016-12-12 17:08:35] INFO [django.server:131] "GET /o/authorize/?response_type=token&client_id=RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI&state=IyZLShufZKLouNGqIu5w%3B%23%2Fcatalogo%2Fcatalogo%2Fcategorias&scope=catalogo HTTP/1.1" 200 3054
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\auth\\\\urls.py'> (None:None) ^accounts/>"
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\\\practian-ioteca-project\\\\oauth2_backend_service\\\\oauth2_backend_api\\\\urls.py'> (None:None) ^api/oauth2_backend/>"
+[2016-12-12 17:08:35] WARNING [django.request:152] Not Found: /favicon.ico
+[2016-12-12 17:08:35] WARNING [django.server:131] "GET /favicon.ico HTTP/1.1" 404 2393
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\auth\\\\urls.py'> (None:None) ^accounts/>"
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-12-12 17:08:35] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'django.contrib.auth.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) ^accounts/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\practian-ioteca-project\\ve_oauth2_backend\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\practian-ioteca-project\\oauth2_backend_service\\oauth2_backend_api\\urls.py'> (None:None) ^api/oauth2_backend/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_backend_api.urls' from 'E:\\\\practian-ioteca-project\\\\oauth2_backend_service\\\\oauth2_backend_api\\\\urls.py'> (None:None) ^api/oauth2_backend/>"
+[2016-12-12 17:08:35] WARNING [django.request:152] Not Found: /favicon.ico
+[2016-12-12 17:08:35] WARNING [django.server:131] "GET /favicon.ico HTTP/1.1" 404 2393
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-12 22:08:37'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-12 22:08:37')
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI'; args=('RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI',)
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) INSERT INTO `oauth2_provider_accesstoken` (`user_id`, `token`, `application_id`, `expires`, `scope`) VALUES ('6e9f183475a14abf9cda0fe98ba93535', 'yrvk0vo8JadvFO8omYf5C52IrvkUtH', 2, '2016-12-13 08:08:37', 'catalogo'); args=['6e9f183475a14abf9cda0fe98ba93535', 'yrvk0vo8JadvFO8omYf5C52IrvkUtH', 2, '2016-12-13 08:08:37', 'catalogo']
+[2016-12-12 17:08:37] INFO [django.server:131] "POST /o/authorize/?response_type=token&client_id=RBzvAoW3dtySxnPob5TuQgINV3yITSVE5bevdosI&state=IyZLShufZKLouNGqIu5w%3B%23%2Fcatalogo%2Fcatalogo%2Fcategorias&scope=catalogo HTTP/1.1" 302 0
+[2016-12-12 17:08:37] INFO [django.server:131] "OPTIONS /api/oauth2_backend/localuserinfo/ HTTP/1.1" 200 0
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'yrvk0vo8JadvFO8omYf5C52IrvkUtH'; args=('yrvk0vo8JadvFO8omYf5C52IrvkUtH',)
+[2016-12-12 17:08:37] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'yrvk0vo8JadvFO8omYf5C52IrvkUtH'; args=('yrvk0vo8JadvFO8omYf5C52IrvkUtH',)
+[2016-12-12 17:08:38] DEBUG [django.db.backends:90] (0.047) SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group` INNER JOIN `oauth2_backend_user_groups` ON (`auth_group`.`id` = `oauth2_backend_user_groups`.`group_id`) WHERE `oauth2_backend_user_groups`.`user_id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 17:08:38] DEBUG [django.db.backends:90] (0.025) SELECT `auth_permission`.`id`, `auth_permission`.`name`, `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `oauth2_backend_user_user_permissions` ON (`auth_permission`.`id` = `oauth2_backend_user_user_permissions`.`permission_id`) INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `oauth2_backend_user_user_permissions`.`user_id` = '6e9f183475a14abf9cda0fe98ba93535' ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 17:08:38] INFO [django.server:131] "GET /api/oauth2_backend/localuserinfo/ HTTP/1.1" 200 384
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.001) SELECT VERSION(); args=None
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:42:23'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:42:23')
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:42:23] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:42:23] DEBUG [django.template:929] Exception while resolving variable 'error' in template 'oauth2_provider/authorize.html'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '[{\'False\': False, \'True\': True, \'None\': None}, {\'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20}, \'user\': <SimpleLazyObject: <User: admin>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000001660710>, \'request\': <WSGIRequest: GET \'/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=GSVcLaX7HeXaByQn04tX&scope=home\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000001597B38>, \'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000001659AE8>>}, {}, {\'response_type\': \'token\', \'scopes\': [\'home\'], \'form\': <AllowForm bound=False, valid=Unknown, fields=(allow;redirect_uri;scope;client_id;state;response_type)>, \'scopes_descriptions\': [\'Access to your home page\'], \'redirect_uri\': \'http://localhost:9001\', \'application\': <Application: Home Web>, \'client_id\': \'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4\', \'state\': \'GSVcLaX7HeXaByQn04tX\', \'view\': <oauth2_provider.views.base.AuthorizationView object at 0x00000000015979B0>, \'request\': <oauthlib.Request url="/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=GSVcLaX7HeXaByQn04tX&scope=home", http_method="GET", headers="{\'QUERY_STRING\': \'response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=GSVcLaX7HeXaByQn04tX&scope=home\', \'FPS_BROWSER_USER_PROFILE_STRING\': \'Default\', \'HTTP_CONNECTION\': \'keep-alive\', \'HTTP_HOST\': \'localhost:7001\', \'VIRTUAL_ENV\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\', \'HTTP_UPGRADE_INSECURE_REQUESTS\': \'1\', \'ALLUSERSPROFILE\': \'C:\\\\ProgramData\', \'HTTP_USER_AGENT\': \'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0\', \'COMPUTERNAME\': \'DEV1-ASULLOM\', \'HOMEPATH\': \'\\\\Users\\\\Usuario\', \'HOMEDRIVE\': \'C:\', \'PATH_INFO\': \'/o/authorize/\', \'SYSTEMROOT\': \'C:\\\\WINDOWS\', \'SESSIONNAME\': \'Console\', \'CONTENT_LENGTH\': \'\', \'CONTENT_TYPE\': \'text/plain\', \'CSRF_COOKIE\': \'9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm\', \'wsgi.run_once\': False, \'wsgi.url_scheme\': \'http\', \'wsgi.version\': (1, 0), \'SERVER_PROTOCOL\': \'HTTP/1.1\', \'PROCESSOR_IDENTIFIER\': \'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel\', \'HTTP_ACCEPT_ENCODING\': \'gzip, deflate\', \'HTTP_COOKIE\': \'csrftoken=9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm; _ga=GA1.1.1207431004.1477416897; sessionid=yc1wabm2zn7ap88yodi84ugfkayrt17s; theme=docs-dark; io=P9UC7b1Q9yUP2sAHAAAa; lang=en-us\', \'PROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\', \'USERPROFILE\': \'C:\\\\Users\\\\Usuario\', \'PATH\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\Scripts;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_ARCHITECTURE\': \'AMD64\', \'WINDIR\': \'C:\\\\WINDOWS\', \'TEMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'REQUEST_METHOD\': \'GET\', \'COMSPEC\': \'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\', \'USERDOMAIN\': \'DEV1-ASULLOM\', \'wsgi.multithread\': True, \'USERNAME\': \'Usuario\', \'TMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'SERVER_SOFTWARE\': \'WSGIServer/0.2\', \'SERVER_NAME\': \'DEV1-ASULLOM\', \'PROMPT\': \'(ve_oauth2_backend) $P$G\', \'_OLD_VIRTUAL_PROMPT\': \'$P$G\', \'wsgi.file_wrapper\': <class \'wsgiref.util.FileWrapper\'>, \'FPS_BROWSER_APP_PROFILE_STRING\': \'Internet Explorer\', \'LOGONSERVER\': \'\\\\\\\\DEV1-ASULLOM\', \'NUMBER_OF_PROCESSORS\': \'8\', \'PROGRAMFILES\': \'C:\\\\Program Files\', \'PROCESSOR_REVISION\': \'3c03\', \'DJANGO_SETTINGS_MODULE\': \'oauth2_backend_main.settings\', \'REMOTE_HOST\': \'\', \'HTTP_REFERER\': \'http://localhost:9001/\', \'PUBLIC\': \'C:\\\\Users\\\\Public\', \'HTTP_ACCEPT\': \'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\', \'APPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\', \'PROGRAMW6432\': \'C:\\\\Program Files\', \'RUN_MAIN\': \'true\', \'COMMONPROGRAMFILES\': \'C:\\\\Program Files\\\\Common Files\', \'SCRIPT_NAME\': \'\', \'LOCALAPPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\', \'SYSTEMDRIVE\': \'C:\', \'COMMONPROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\\\\Common Files\', \'COMMONPROGRAMW6432\': \'C:\\\\Program Files\\\\Common Files\', \'PROGRAMDATA\': \'C:\\\\ProgramData\', \'REMOTE_ADDR\': \'127.0.0.1\', \'OS\': \'Windows_NT\', \'_OLD_VIRTUAL_PATH\': \'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_LEVEL\': \'6\', \'HTTP_ACCEPT_LANGUAGE\': \'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3\', \'PSMODULEPATH\': \'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\\', \'PATHEXT\': \'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW\', \'USERDOMAIN_ROAMINGPROFILE\': \'DEV1-ASULLOM\', \'wsgi.multiprocess\': False, \'GATEWAY_INTERFACE\': \'CGI/1.1\', \'SERVER_PORT\': \'7001\'}", body="">}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n    <div class="block-ce\'>, <IfNode>, <TextNode: \'\\n    </div>\\n\'>]>}]'
+[2016-12-12 20:42:23] INFO [django.server:131] "GET /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=GSVcLaX7HeXaByQn04tX&scope=home HTTP/1.1" 200 3011
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:42:25'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:42:25')
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:42:25] DEBUG [django.db.backends:90] (0.000) INSERT INTO `oauth2_provider_accesstoken` (`user_id`, `token`, `application_id`, `expires`, `scope`) VALUES ('6e9f183475a14abf9cda0fe98ba93535', 'LaaIt9wR21zY8LO7mRxefCqFYADWJD', 1, '2016-12-13 11:42:25', 'home'); args=['6e9f183475a14abf9cda0fe98ba93535', 'LaaIt9wR21zY8LO7mRxefCqFYADWJD', 1, '2016-12-13 11:42:25', 'home']
+[2016-12-12 20:42:25] INFO [django.server:131] "POST /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=GSVcLaX7HeXaByQn04tX&scope=home HTTP/1.1" 302 0
+[2016-12-12 20:42:26] INFO [django.server:131] "OPTIONS /api/oauth2_backend/localuserinfo/ HTTP/1.1" 200 0
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.002) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'LaaIt9wR21zY8LO7mRxefCqFYADWJD'; args=('LaaIt9wR21zY8LO7mRxefCqFYADWJD',)
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.002) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'LaaIt9wR21zY8LO7mRxefCqFYADWJD'; args=('LaaIt9wR21zY8LO7mRxefCqFYADWJD',)
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.001) SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group` INNER JOIN `oauth2_backend_user_groups` ON (`auth_group`.`id` = `oauth2_backend_user_groups`.`group_id`) WHERE `oauth2_backend_user_groups`.`user_id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:42:26] DEBUG [django.db.backends:90] (0.001) SELECT `auth_permission`.`id`, `auth_permission`.`name`, `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `oauth2_backend_user_user_permissions` ON (`auth_permission`.`id` = `oauth2_backend_user_user_permissions`.`permission_id`) INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `oauth2_backend_user_user_permissions`.`user_id` = '6e9f183475a14abf9cda0fe98ba93535' ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:42:26] INFO [django.server:131] "GET /api/oauth2_backend/localuserinfo/ HTTP/1.1" 200 384
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:45:07'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:45:07')
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:07] DEBUG [django.template:929] Exception while resolving variable 'error' in template 'oauth2_provider/authorize.html'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '[{\'False\': False, \'True\': True, \'None\': None}, {\'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20}, \'user\': <SimpleLazyObject: <User: admin>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000001665908>, \'request\': <WSGIRequest: GET \'/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=43cS4gaG729HV7dnIrpo%3B%23%2Fvoucher&scope=home\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000015C90B8>, \'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000001659950>>}, {}, {\'response_type\': \'token\', \'scopes\': [\'home\'], \'form\': <AllowForm bound=False, valid=Unknown, fields=(allow;redirect_uri;scope;client_id;state;response_type)>, \'scopes_descriptions\': [\'Access to your home page\'], \'redirect_uri\': \'http://localhost:9001\', \'application\': <Application: Home Web>, \'client_id\': \'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4\', \'state\': \'43cS4gaG729HV7dnIrpo;#/voucher\', \'view\': <oauth2_provider.views.base.AuthorizationView object at 0x00000000015C95F8>, \'request\': <oauthlib.Request url="/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=43cS4gaG729HV7dnIrpo%3B%23%2Fvoucher&scope=home", http_method="GET", headers="{\'QUERY_STRING\': \'response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=43cS4gaG729HV7dnIrpo%3B%23%2Fvoucher&scope=home\', \'FPS_BROWSER_USER_PROFILE_STRING\': \'Default\', \'HTTP_CONNECTION\': \'keep-alive\', \'HTTP_HOST\': \'localhost:7001\', \'VIRTUAL_ENV\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\', \'HTTP_UPGRADE_INSECURE_REQUESTS\': \'1\', \'ALLUSERSPROFILE\': \'C:\\\\ProgramData\', \'HTTP_USER_AGENT\': \'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0\', \'COMPUTERNAME\': \'DEV1-ASULLOM\', \'HOMEPATH\': \'\\\\Users\\\\Usuario\', \'HOMEDRIVE\': \'C:\', \'PATH_INFO\': \'/o/authorize/\', \'SYSTEMROOT\': \'C:\\\\WINDOWS\', \'SESSIONNAME\': \'Console\', \'CONTENT_LENGTH\': \'\', \'CONTENT_TYPE\': \'text/plain\', \'CSRF_COOKIE\': \'9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm\', \'wsgi.run_once\': False, \'wsgi.url_scheme\': \'http\', \'wsgi.version\': (1, 0), \'SERVER_PROTOCOL\': \'HTTP/1.1\', \'PROCESSOR_IDENTIFIER\': \'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel\', \'HTTP_ACCEPT_ENCODING\': \'gzip, deflate\', \'HTTP_COOKIE\': \'csrftoken=9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm; _ga=GA1.1.1207431004.1477416897; sessionid=yc1wabm2zn7ap88yodi84ugfkayrt17s; theme=docs-dark; io=OACXtZjnMZZTc7unAAAg; lang=en-us\', \'PROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\', \'USERPROFILE\': \'C:\\\\Users\\\\Usuario\', \'PATH\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\Scripts;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_ARCHITECTURE\': \'AMD64\', \'WINDIR\': \'C:\\\\WINDOWS\', \'TEMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'REQUEST_METHOD\': \'GET\', \'COMSPEC\': \'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\', \'USERDOMAIN\': \'DEV1-ASULLOM\', \'wsgi.multithread\': True, \'USERNAME\': \'Usuario\', \'TMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'SERVER_SOFTWARE\': \'WSGIServer/0.2\', \'SERVER_NAME\': \'DEV1-ASULLOM\', \'PROMPT\': \'(ve_oauth2_backend) $P$G\', \'_OLD_VIRTUAL_PROMPT\': \'$P$G\', \'wsgi.file_wrapper\': <class \'wsgiref.util.FileWrapper\'>, \'FPS_BROWSER_APP_PROFILE_STRING\': \'Internet Explorer\', \'LOGONSERVER\': \'\\\\\\\\DEV1-ASULLOM\', \'NUMBER_OF_PROCESSORS\': \'8\', \'PROGRAMFILES\': \'C:\\\\Program Files\', \'PROCESSOR_REVISION\': \'3c03\', \'DJANGO_SETTINGS_MODULE\': \'oauth2_backend_main.settings\', \'REMOTE_HOST\': \'\', \'HTTP_REFERER\': \'http://localhost:9001/\', \'PUBLIC\': \'C:\\\\Users\\\\Public\', \'HTTP_ACCEPT\': \'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\', \'APPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\', \'PROGRAMW6432\': \'C:\\\\Program Files\', \'RUN_MAIN\': \'true\', \'COMMONPROGRAMFILES\': \'C:\\\\Program Files\\\\Common Files\', \'SCRIPT_NAME\': \'\', \'LOCALAPPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\', \'SYSTEMDRIVE\': \'C:\', \'COMMONPROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\\\\Common Files\', \'COMMONPROGRAMW6432\': \'C:\\\\Program Files\\\\Common Files\', \'PROGRAMDATA\': \'C:\\\\ProgramData\', \'REMOTE_ADDR\': \'127.0.0.1\', \'OS\': \'Windows_NT\', \'_OLD_VIRTUAL_PATH\': \'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_LEVEL\': \'6\', \'HTTP_ACCEPT_LANGUAGE\': \'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3\', \'PSMODULEPATH\': \'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\\', \'PATHEXT\': \'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW\', \'USERDOMAIN_ROAMINGPROFILE\': \'DEV1-ASULLOM\', \'wsgi.multiprocess\': False, \'GATEWAY_INTERFACE\': \'CGI/1.1\', \'SERVER_PORT\': \'7001\'}", body="">}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n    <div class="block-ce\'>, <IfNode>, <TextNode: \'\\n    </div>\\n\'>]>}]'
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:07] INFO [django.server:131] "GET /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=43cS4gaG729HV7dnIrpo%3B%23%2Fvoucher&scope=home HTTP/1.1" 200 3021
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT VERSION(); args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:45:07'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:45:07')
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:07] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:07] DEBUG [django.template:929] Exception while resolving variable 'error' in template 'oauth2_provider/authorize.html'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '[{\'False\': False, \'True\': True, \'None\': None}, {\'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20}, \'user\': <SimpleLazyObject: <User: admin>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000015970F0>, \'request\': <WSGIRequest: GET \'/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=BtbyzIDE0GSwLzA1bw1b%3B%23%2Fvoucher&scope=home\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000016663C8>, \'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000001659950>>}, {}, {\'response_type\': \'token\', \'scopes\': [\'home\'], \'form\': <AllowForm bound=False, valid=Unknown, fields=(allow;redirect_uri;scope;client_id;state;response_type)>, \'scopes_descriptions\': [\'Access to your home page\'], \'redirect_uri\': \'http://localhost:9001\', \'application\': <Application: Home Web>, \'client_id\': \'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4\', \'state\': \'BtbyzIDE0GSwLzA1bw1b;#/voucher\', \'view\': <oauth2_provider.views.base.AuthorizationView object at 0x0000000001666FD0>, \'request\': <oauthlib.Request url="/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=BtbyzIDE0GSwLzA1bw1b%3B%23%2Fvoucher&scope=home", http_method="GET", headers="{\'QUERY_STRING\': \'response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=BtbyzIDE0GSwLzA1bw1b%3B%23%2Fvoucher&scope=home\', \'FPS_BROWSER_USER_PROFILE_STRING\': \'Default\', \'HTTP_CONNECTION\': \'keep-alive\', \'HTTP_HOST\': \'localhost:7001\', \'VIRTUAL_ENV\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\', \'HTTP_UPGRADE_INSECURE_REQUESTS\': \'1\', \'ALLUSERSPROFILE\': \'C:\\\\ProgramData\', \'HTTP_USER_AGENT\': \'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0\', \'COMPUTERNAME\': \'DEV1-ASULLOM\', \'HOMEPATH\': \'\\\\Users\\\\Usuario\', \'HOMEDRIVE\': \'C:\', \'PATH_INFO\': \'/o/authorize/\', \'SYSTEMROOT\': \'C:\\\\WINDOWS\', \'SESSIONNAME\': \'Console\', \'CONTENT_LENGTH\': \'\', \'CONTENT_TYPE\': \'text/plain\', \'CSRF_COOKIE\': \'9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm\', \'wsgi.run_once\': False, \'wsgi.url_scheme\': \'http\', \'wsgi.version\': (1, 0), \'SERVER_PROTOCOL\': \'HTTP/1.1\', \'PROCESSOR_IDENTIFIER\': \'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel\', \'HTTP_ACCEPT_ENCODING\': \'gzip, deflate\', \'HTTP_COOKIE\': \'csrftoken=9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm; _ga=GA1.1.1207431004.1477416897; sessionid=yc1wabm2zn7ap88yodi84ugfkayrt17s; theme=docs-dark; io=OACXtZjnMZZTc7unAAAg; lang=en-us\', \'PROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\', \'USERPROFILE\': \'C:\\\\Users\\\\Usuario\', \'PATH\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\Scripts;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_ARCHITECTURE\': \'AMD64\', \'WINDIR\': \'C:\\\\WINDOWS\', \'TEMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'REQUEST_METHOD\': \'GET\', \'COMSPEC\': \'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\', \'USERDOMAIN\': \'DEV1-ASULLOM\', \'wsgi.multithread\': True, \'USERNAME\': \'Usuario\', \'TMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'SERVER_SOFTWARE\': \'WSGIServer/0.2\', \'SERVER_NAME\': \'DEV1-ASULLOM\', \'PROMPT\': \'(ve_oauth2_backend) $P$G\', \'_OLD_VIRTUAL_PROMPT\': \'$P$G\', \'wsgi.file_wrapper\': <class \'wsgiref.util.FileWrapper\'>, \'FPS_BROWSER_APP_PROFILE_STRING\': \'Internet Explorer\', \'LOGONSERVER\': \'\\\\\\\\DEV1-ASULLOM\', \'NUMBER_OF_PROCESSORS\': \'8\', \'PROGRAMFILES\': \'C:\\\\Program Files\', \'PROCESSOR_REVISION\': \'3c03\', \'DJANGO_SETTINGS_MODULE\': \'oauth2_backend_main.settings\', \'REMOTE_HOST\': \'\', \'HTTP_REFERER\': \'http://localhost:9001/\', \'PUBLIC\': \'C:\\\\Users\\\\Public\', \'HTTP_ACCEPT\': \'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\', \'APPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\', \'PROGRAMW6432\': \'C:\\\\Program Files\', \'RUN_MAIN\': \'true\', \'COMMONPROGRAMFILES\': \'C:\\\\Program Files\\\\Common Files\', \'SCRIPT_NAME\': \'\', \'LOCALAPPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\', \'SYSTEMDRIVE\': \'C:\', \'COMMONPROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\\\\Common Files\', \'COMMONPROGRAMW6432\': \'C:\\\\Program Files\\\\Common Files\', \'PROGRAMDATA\': \'C:\\\\ProgramData\', \'REMOTE_ADDR\': \'127.0.0.1\', \'OS\': \'Windows_NT\', \'_OLD_VIRTUAL_PATH\': \'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_LEVEL\': \'6\', \'HTTP_ACCEPT_LANGUAGE\': \'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3\', \'PSMODULEPATH\': \'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\\', \'PATHEXT\': \'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW\', \'USERDOMAIN_ROAMINGPROFILE\': \'DEV1-ASULLOM\', \'wsgi.multiprocess\': False, \'GATEWAY_INTERFACE\': \'CGI/1.1\', \'SERVER_PORT\': \'7001\'}", body="">}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n    <div class="block-ce\'>, <IfNode>, <TextNode: \'\\n    </div>\\n\'>]>}]'
+[2016-12-12 20:45:07] INFO [django.server:131] "GET /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=BtbyzIDE0GSwLzA1bw1b%3B%23%2Fvoucher&scope=home HTTP/1.1" 200 3021
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:45:08'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:45:08')
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:08] DEBUG [django.db.backends:90] (0.000) INSERT INTO `oauth2_provider_accesstoken` (`user_id`, `token`, `application_id`, `expires`, `scope`) VALUES ('6e9f183475a14abf9cda0fe98ba93535', 'cXu4moq5BgBUFUo1dJhWLinOfXE3jx', 1, '2016-12-13 11:45:08', 'home'); args=['6e9f183475a14abf9cda0fe98ba93535', 'cXu4moq5BgBUFUo1dJhWLinOfXE3jx', 1, '2016-12-13 11:45:08', 'home']
+[2016-12-12 20:45:08] INFO [django.server:131] "POST /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=43cS4gaG729HV7dnIrpo%3B%23%2Fvoucher&scope=home HTTP/1.1" 302 0
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:45:14'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:45:14')
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:14] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:14] DEBUG [django.template:929] Exception while resolving variable 'error' in template 'oauth2_provider/authorize.html'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '[{\'False\': False, \'True\': True, \'None\': None}, {\'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20}, \'user\': <SimpleLazyObject: <User: admin>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000015A50F0>, \'request\': <WSGIRequest: GET \'/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=90ZLTHoVc2maewciGdU2%3B%23%2Fcatalogo%2Fcategorias&scope=home\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000001660CC0>, \'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000005D15D08>>}, {}, {\'response_type\': \'token\', \'scopes\': [\'home\'], \'form\': <AllowForm bound=False, valid=Unknown, fields=(allow;redirect_uri;scope;client_id;state;response_type)>, \'scopes_descriptions\': [\'Access to your home page\'], \'redirect_uri\': \'http://localhost:9001\', \'application\': <Application: Home Web>, \'client_id\': \'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4\', \'state\': \'90ZLTHoVc2maewciGdU2;#/catalogo/categorias\', \'view\': <oauth2_provider.views.base.AuthorizationView object at 0x00000000016601D0>, \'request\': <oauthlib.Request url="/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=90ZLTHoVc2maewciGdU2%3B%23%2Fcatalogo%2Fcategorias&scope=home", http_method="GET", headers="{\'QUERY_STRING\': \'response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=90ZLTHoVc2maewciGdU2%3B%23%2Fcatalogo%2Fcategorias&scope=home\', \'FPS_BROWSER_USER_PROFILE_STRING\': \'Default\', \'HTTP_CONNECTION\': \'keep-alive\', \'HTTP_HOST\': \'localhost:7001\', \'VIRTUAL_ENV\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\', \'HTTP_UPGRADE_INSECURE_REQUESTS\': \'1\', \'ALLUSERSPROFILE\': \'C:\\\\ProgramData\', \'HTTP_USER_AGENT\': \'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0\', \'COMPUTERNAME\': \'DEV1-ASULLOM\', \'HOMEPATH\': \'\\\\Users\\\\Usuario\', \'HOMEDRIVE\': \'C:\', \'PATH_INFO\': \'/o/authorize/\', \'SYSTEMROOT\': \'C:\\\\WINDOWS\', \'SESSIONNAME\': \'Console\', \'CONTENT_LENGTH\': \'\', \'CONTENT_TYPE\': \'text/plain\', \'CSRF_COOKIE\': \'9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm\', \'wsgi.run_once\': False, \'wsgi.url_scheme\': \'http\', \'wsgi.version\': (1, 0), \'SERVER_PROTOCOL\': \'HTTP/1.1\', \'PROCESSOR_IDENTIFIER\': \'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel\', \'HTTP_ACCEPT_ENCODING\': \'gzip, deflate\', \'HTTP_COOKIE\': \'csrftoken=9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm; _ga=GA1.1.1207431004.1477416897; sessionid=yc1wabm2zn7ap88yodi84ugfkayrt17s; theme=docs-dark; io=gLDC-Qwsodfi2r9AAAAh; lang=en-us\', \'PROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\', \'USERPROFILE\': \'C:\\\\Users\\\\Usuario\', \'PATH\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\Scripts;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_ARCHITECTURE\': \'AMD64\', \'WINDIR\': \'C:\\\\WINDOWS\', \'TEMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'REQUEST_METHOD\': \'GET\', \'COMSPEC\': \'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\', \'USERDOMAIN\': \'DEV1-ASULLOM\', \'wsgi.multithread\': True, \'USERNAME\': \'Usuario\', \'TMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'SERVER_SOFTWARE\': \'WSGIServer/0.2\', \'SERVER_NAME\': \'DEV1-ASULLOM\', \'PROMPT\': \'(ve_oauth2_backend) $P$G\', \'_OLD_VIRTUAL_PROMPT\': \'$P$G\', \'wsgi.file_wrapper\': <class \'wsgiref.util.FileWrapper\'>, \'FPS_BROWSER_APP_PROFILE_STRING\': \'Internet Explorer\', \'LOGONSERVER\': \'\\\\\\\\DEV1-ASULLOM\', \'NUMBER_OF_PROCESSORS\': \'8\', \'PROGRAMFILES\': \'C:\\\\Program Files\', \'PROCESSOR_REVISION\': \'3c03\', \'DJANGO_SETTINGS_MODULE\': \'oauth2_backend_main.settings\', \'REMOTE_HOST\': \'\', \'HTTP_REFERER\': \'http://localhost:9001/\', \'PUBLIC\': \'C:\\\\Users\\\\Public\', \'HTTP_ACCEPT\': \'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\', \'APPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\', \'PROGRAMW6432\': \'C:\\\\Program Files\', \'RUN_MAIN\': \'true\', \'COMMONPROGRAMFILES\': \'C:\\\\Program Files\\\\Common Files\', \'SCRIPT_NAME\': \'\', \'LOCALAPPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\', \'SYSTEMDRIVE\': \'C:\', \'COMMONPROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\\\\Common Files\', \'COMMONPROGRAMW6432\': \'C:\\\\Program Files\\\\Common Files\', \'PROGRAMDATA\': \'C:\\\\ProgramData\', \'REMOTE_ADDR\': \'127.0.0.1\', \'OS\': \'Windows_NT\', \'_OLD_VIRTUAL_PATH\': \'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_LEVEL\': \'6\', \'HTTP_ACCEPT_LANGUAGE\': \'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3\', \'PSMODULEPATH\': \'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\\', \'PATHEXT\': \'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW\', \'USERDOMAIN_ROAMINGPROFILE\': \'DEV1-ASULLOM\', \'wsgi.multiprocess\': False, \'GATEWAY_INTERFACE\': \'CGI/1.1\', \'SERVER_PORT\': \'7001\'}", body="">}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n    <div class="block-ce\'>, <IfNode>, <TextNode: \'\\n    </div>\\n\'>]>}]'
+[2016-12-12 20:45:14] INFO [django.server:131] "GET /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=90ZLTHoVc2maewciGdU2%3B%23%2Fcatalogo%2Fcategorias&scope=home HTTP/1.1" 200 3033
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:45:26'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:45:26')
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:26] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:26] DEBUG [django.template:929] Exception while resolving variable 'error' in template 'oauth2_provider/authorize.html'.
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'error'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\practian-ioteca-project\ve_oauth2_backend\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [error] in '[{\'False\': False, \'True\': True, \'None\': None}, {\'DEFAULT_MESSAGE_LEVELS\': {\'WARNING\': 30, \'ERROR\': 40, \'DEBUG\': 10, \'SUCCESS\': 25, \'INFO\': 20}, \'user\': <SimpleLazyObject: <User: admin>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000015A5080>, \'request\': <WSGIRequest: GET \'/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=91GUcWzuahKb6ISqwFIK&scope=home\'>, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000001665048>, \'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000001659D90>>}, {}, {\'response_type\': \'token\', \'scopes\': [\'home\'], \'form\': <AllowForm bound=False, valid=Unknown, fields=(allow;redirect_uri;scope;client_id;state;response_type)>, \'scopes_descriptions\': [\'Access to your home page\'], \'redirect_uri\': \'http://localhost:9001\', \'application\': <Application: Home Web>, \'client_id\': \'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4\', \'state\': \'91GUcWzuahKb6ISqwFIK\', \'view\': <oauth2_provider.views.base.AuthorizationView object at 0x00000000016652E8>, \'request\': <oauthlib.Request url="/o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=91GUcWzuahKb6ISqwFIK&scope=home", http_method="GET", headers="{\'QUERY_STRING\': \'response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=91GUcWzuahKb6ISqwFIK&scope=home\', \'FPS_BROWSER_USER_PROFILE_STRING\': \'Default\', \'HTTP_CONNECTION\': \'keep-alive\', \'HTTP_HOST\': \'localhost:7001\', \'VIRTUAL_ENV\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\', \'HTTP_UPGRADE_INSECURE_REQUESTS\': \'1\', \'ALLUSERSPROFILE\': \'C:\\\\ProgramData\', \'HTTP_USER_AGENT\': \'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0\', \'COMPUTERNAME\': \'DEV1-ASULLOM\', \'HOMEPATH\': \'\\\\Users\\\\Usuario\', \'HOMEDRIVE\': \'C:\', \'PATH_INFO\': \'/o/authorize/\', \'SYSTEMROOT\': \'C:\\\\WINDOWS\', \'SESSIONNAME\': \'Console\', \'CONTENT_LENGTH\': \'\', \'CONTENT_TYPE\': \'text/plain\', \'CSRF_COOKIE\': \'9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm\', \'wsgi.run_once\': False, \'wsgi.url_scheme\': \'http\', \'wsgi.version\': (1, 0), \'SERVER_PROTOCOL\': \'HTTP/1.1\', \'PROCESSOR_IDENTIFIER\': \'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel\', \'HTTP_ACCEPT_ENCODING\': \'gzip, deflate\', \'HTTP_COOKIE\': \'csrftoken=9Aeqfb8OlbR6tUir0G37k7K6TTWdNq70rpovlq8MxNogOdILxGi2It1MaFoT6ycm; _ga=GA1.1.1207431004.1477416897; sessionid=yc1wabm2zn7ap88yodi84ugfkayrt17s; theme=docs-dark; io=oqJHkUYGa7VypMkPAAAi; lang=en-us\', \'PROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\', \'USERPROFILE\': \'C:\\\\Users\\\\Usuario\', \'PATH\': \'E:\\\\practian-ioteca-project\\\\ve_oauth2_backend\\\\Scripts;C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_ARCHITECTURE\': \'AMD64\', \'WINDIR\': \'C:\\\\WINDOWS\', \'TEMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'REQUEST_METHOD\': \'GET\', \'COMSPEC\': \'C:\\\\WINDOWS\\\\system32\\\\cmd.exe\', \'USERDOMAIN\': \'DEV1-ASULLOM\', \'wsgi.multithread\': True, \'USERNAME\': \'Usuario\', \'TMP\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\', \'SERVER_SOFTWARE\': \'WSGIServer/0.2\', \'SERVER_NAME\': \'DEV1-ASULLOM\', \'PROMPT\': \'(ve_oauth2_backend) $P$G\', \'_OLD_VIRTUAL_PROMPT\': \'$P$G\', \'wsgi.file_wrapper\': <class \'wsgiref.util.FileWrapper\'>, \'FPS_BROWSER_APP_PROFILE_STRING\': \'Internet Explorer\', \'LOGONSERVER\': \'\\\\\\\\DEV1-ASULLOM\', \'NUMBER_OF_PROCESSORS\': \'8\', \'PROGRAMFILES\': \'C:\\\\Program Files\', \'PROCESSOR_REVISION\': \'3c03\', \'DJANGO_SETTINGS_MODULE\': \'oauth2_backend_main.settings\', \'REMOTE_HOST\': \'\', \'HTTP_REFERER\': \'http://localhost:9001/\', \'PUBLIC\': \'C:\\\\Users\\\\Public\', \'HTTP_ACCEPT\': \'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\', \'APPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\', \'PROGRAMW6432\': \'C:\\\\Program Files\', \'RUN_MAIN\': \'true\', \'COMMONPROGRAMFILES\': \'C:\\\\Program Files\\\\Common Files\', \'SCRIPT_NAME\': \'\', \'LOCALAPPDATA\': \'C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\', \'SYSTEMDRIVE\': \'C:\', \'COMMONPROGRAMFILES(X86)\': \'C:\\\\Program Files (x86)\\\\Common Files\', \'COMMONPROGRAMW6432\': \'C:\\\\Program Files\\\\Common Files\', \'PROGRAMDATA\': \'C:\\\\ProgramData\', \'REMOTE_ADDR\': \'127.0.0.1\', \'OS\': \'Windows_NT\', \'_OLD_VIRTUAL_PATH\': \'C:\\\\ProgramData\\\\Oracle\\\\Java\\\\javapath;C:\\\\oraclexe\\\\app\\\\oracle\\\\product\\\\11.2.0\\\\server\\\\bin;;C:\\\\Python\\\\Python34\\\\;C:\\\\Python\\\\Python34\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\Scripts\\\\;C:\\\\Python\\\\Python35\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\iCLS Client\\\\;C:\\\\Program Files\\\\Intel\\\\iCLS Client\\\\;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\DAL;C:\\\\Program Files (x86)\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\Intel\\\\Intel(R) Management Engine Components\\\\IPT;C:\\\\Program Files\\\\nodejs\\\\;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Perforce\\\\DVCS\\\\;C:\\\\Program Files\\\\Intel\\\\WiFi\\\\bin\\\\;C:\\\\Program Files\\\\Common Files\\\\Intel\\\\WirelessCommon\\\\;C:\\\\Python\\\\Python35-32\\\\Scripts\\\\;C:\\\\Python\\\\Python35-32\\\\;C:\\\\Users\\\\Usuario\\\\AppData\\\\Roaming\\\\npm;C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\atom\\\\bin;%USERPROFILE%\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;\', \'PROCESSOR_LEVEL\': \'6\', \'HTTP_ACCEPT_LANGUAGE\': \'es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3\', \'PSMODULEPATH\': \'C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\\', \'PATHEXT\': \'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW\', \'USERDOMAIN_ROAMINGPROFILE\': \'DEV1-ASULLOM\', \'wsgi.multiprocess\': False, \'GATEWAY_INTERFACE\': \'CGI/1.1\', \'SERVER_PORT\': \'7001\'}", body="">}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n    <div class="block-ce\'>, <IfNode>, <TextNode: \'\\n    </div>\\n\'>]>}]'
+[2016-12-12 20:45:26] INFO [django.server:131] "GET /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=91GUcWzuahKb6ISqwFIK&scope=home HTTP/1.1" 200 3011
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'yc1wabm2zn7ap88yodi84ugfkayrt17s' AND `django_session`.`expire_date` > '2016-12-13 01:45:27'); args=('yc1wabm2zn7ap88yodi84ugfkayrt17s', '2016-12-13 01:45:27')
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by` FROM `oauth2_backend_user` WHERE `oauth2_backend_user`.`id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) SELECT `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_application` WHERE `oauth2_provider_application`.`client_id` = 'o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4'; args=('o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4',)
+[2016-12-12 20:45:27] DEBUG [django.db.backends:90] (0.000) INSERT INTO `oauth2_provider_accesstoken` (`user_id`, `token`, `application_id`, `expires`, `scope`) VALUES ('6e9f183475a14abf9cda0fe98ba93535', 'Hb3hj9K9K7ir0eCKyMO6nCXbqdSkDA', 1, '2016-12-13 11:45:27', 'home'); args=['6e9f183475a14abf9cda0fe98ba93535', 'Hb3hj9K9K7ir0eCKyMO6nCXbqdSkDA', 1, '2016-12-13 11:45:27', 'home']
+[2016-12-12 20:45:27] INFO [django.server:131] "POST /o/authorize/?response_type=token&client_id=o5W31ZGx7XrCp4B4f6Mr0HMryYyUMuswMpL0LLi4&state=91GUcWzuahKb6ISqwFIK&scope=home HTTP/1.1" 302 0
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.000) SELECT VERSION(); args=None
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'Hb3hj9K9K7ir0eCKyMO6nCXbqdSkDA'; args=('Hb3hj9K9K7ir0eCKyMO6nCXbqdSkDA',)
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.001) SELECT `oauth2_provider_accesstoken`.`id`, `oauth2_provider_accesstoken`.`user_id`, `oauth2_provider_accesstoken`.`token`, `oauth2_provider_accesstoken`.`application_id`, `oauth2_provider_accesstoken`.`expires`, `oauth2_provider_accesstoken`.`scope`, `oauth2_backend_user`.`password`, `oauth2_backend_user`.`last_login`, `oauth2_backend_user`.`is_superuser`, `oauth2_backend_user`.`username`, `oauth2_backend_user`.`first_name`, `oauth2_backend_user`.`last_name`, `oauth2_backend_user`.`email`, `oauth2_backend_user`.`is_staff`, `oauth2_backend_user`.`is_active`, `oauth2_backend_user`.`date_joined`, `oauth2_backend_user`.`id`, `oauth2_backend_user`.`last_hierarchy_id`, `oauth2_backend_user`.`last_module_id`, `oauth2_backend_user`.`person_id`, `oauth2_backend_user`.`updated_at`, `oauth2_backend_user`.`registered_by`, `oauth2_provider_application`.`id`, `oauth2_provider_application`.`client_id`, `oauth2_provider_application`.`user_id`, `oauth2_provider_application`.`redirect_uris`, `oauth2_provider_application`.`client_type`, `oauth2_provider_application`.`authorization_grant_type`, `oauth2_provider_application`.`client_secret`, `oauth2_provider_application`.`name`, `oauth2_provider_application`.`skip_authorization` FROM `oauth2_provider_accesstoken` LEFT OUTER JOIN `oauth2_backend_user` ON (`oauth2_provider_accesstoken`.`user_id` = `oauth2_backend_user`.`id`) INNER JOIN `oauth2_provider_application` ON (`oauth2_provider_accesstoken`.`application_id` = `oauth2_provider_application`.`id`) WHERE `oauth2_provider_accesstoken`.`token` = 'Hb3hj9K9K7ir0eCKyMO6nCXbqdSkDA'; args=('Hb3hj9K9K7ir0eCKyMO6nCXbqdSkDA',)
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.000) SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group` INNER JOIN `oauth2_backend_user_groups` ON (`auth_group`.`id` = `oauth2_backend_user_groups`.`group_id`) WHERE `oauth2_backend_user_groups`.`user_id` = '6e9f183475a14abf9cda0fe98ba93535'; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:28] DEBUG [django.db.backends:90] (0.000) SELECT `auth_permission`.`id`, `auth_permission`.`name`, `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `oauth2_backend_user_user_permissions` ON (`auth_permission`.`id` = `oauth2_backend_user_user_permissions`.`permission_id`) INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `oauth2_backend_user_user_permissions`.`user_id` = '6e9f183475a14abf9cda0fe98ba93535' ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=('6e9f183475a14abf9cda0fe98ba93535',)
+[2016-12-12 20:45:28] INFO [django.server:131] "GET /api/oauth2_backend/localuserinfo/ HTTP/1.1" 200 384
