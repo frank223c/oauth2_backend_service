@@ -122,14 +122,6 @@ DATABASES = {
         'OPTIONS': {
             'read_default_file': 'credentials.cnf',  # solo funciona con mysql
         },
-    },
-    'mysql_localXX': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'upeu_db',
-        'USER': 'root',
-        'PASSWORD': '12345',
-        'HOST': '127.0.0.1',
-        'PORT': '3306'
     }
 }
 
@@ -211,6 +203,7 @@ OAUTH2_PROVIDER = {
         'home': 'Access to your home page',
         'backend': 'Access to your backend app',
         'catalogo': 'Access to your catalogo app',
+        'ubigeo': 'Access to your ubigeo app',
         'admision': 'Access to your admision app'
     }
 }

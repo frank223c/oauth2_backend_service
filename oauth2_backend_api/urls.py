@@ -13,6 +13,7 @@ urlpatterns = [
 
     url(r'^localuserinfo/$', LocalUserInfoView.as_view()),
     url(r'^usermenu/$', UserMenuView.as_view()),
+    url(r'^usermenu/(?P<module>[^/]+)/$', UserMenuView.as_view()),
     url(r'^routers/$', RouterView.as_view()),
     url(r'^logs/(?P<param>[^/]+)/$', LogView.as_view()),
     #url(r'^', include(router.urls)),

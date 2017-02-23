@@ -45,12 +45,13 @@ class UserMenuView(APIView):
     """
     permission_classes = [IsAuthenticated]
 
-    def get(self, request, format=None):
+    def get(self, request, format=None, module='BACKEND'):
         """
         Return menu of current user.
         """
         self.request.session.set_expiry(30)
-        menu_module = 'BACKEND'  # Variable para indicar el entorno
+        print ("module:", module)
+        menu_module = module  # 'BACKEND'  # Variable para indicar el entorno
         menu_parents = []  # Variable que contiene los menus
         menu_childrens = {}  # Variable que contien los items del menu
         h_list = []
